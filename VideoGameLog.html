@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content="width=device-width", initial-scale = 1.0>
+
+        <title> Game Log </title>
+        <link href="style.css" rel = "stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script> 
+        <script src="code.js" defer></script>
+    </head>
+
+    <body>
+        <div align="center">
+            <h1> My Game Log </h1>
+        </div>
+        <div align = "center" class = "presentation"><p>Hey!!! here you can search for any game you want to add</p></div>
+        <div class = "container">
+            <input type="text" id="searchInput" placeholder="Search game...">
+            <select id = "filterType">
+                <option value="">No Filter</option>
+                <option value="developers">Developer</option>
+                <option value="publishers">Publisher</option>
+
+            </select>
+            <input type ="text" id="filterValue" placeholder="Search with filter">
+            <button id="searchBtn">Search</button>                                    
+        </div>                                                                                     
+
+        <h2 align = "center">Search Results</h2>                                                                                                             
+        <div id = "results"></div>
+
+
+        <h2 align = "center" class = "textList">↓Your List (currently playing/played) ↓</h2>
+        <div id = "gameList"></div>
+
+<script>
