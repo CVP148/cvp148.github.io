@@ -31,7 +31,7 @@ async function searchGame() {
             const id = filterData.results[0].id;
             url += `&${filter}=${id}`;
         } else {
-            alert("Developer/Publisher not found");
+            alert(`${filter} not found`);
             return;
         }
 

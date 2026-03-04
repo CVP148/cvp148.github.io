@@ -230,6 +230,36 @@ body{
     transition: transform 0.2s, background 0.2s;
 }
 
+.steam{
+    background: rgba(30, 30, 30, 0.8);
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+    width: 250px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    margin: 0 auto;
+}
+
+.steam a{
+    color: #48a9c4f3;
+}
+
+.steam a:visited{
+    color: #48a9c4f3;
+}
+
+.steam a:hover{
+    color: #0072ff;
+}
+
+.steamIMG{
+    width: 250px;
+    height: auto;
+    border-radius: 20px;
+}
+
 @media (max-width: 600px) {
     .log-card, .game-card {
         width: 90%;
