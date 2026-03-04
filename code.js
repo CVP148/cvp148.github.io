@@ -94,6 +94,9 @@ function renderList() {
             <div class = "stars">${createStars(game.rating, index)}</div>
             
             <div class = "statusButton">Status: <button onclick="statusChange(this)">Playing</button></div>
+
+            <p>Notes:</p>
+            <textarea class = "thoughts" placeholder = "Write you notes here"></textarea>
         `;
 
         list.appendChild(div);
