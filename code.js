@@ -109,9 +109,9 @@ function removeGame(index) {
 }
 
 function statusChange(button){
-    const wasPlaying = button.textContent === "Playing";
+    const status = button.textContent;
 
-    if(wasPlaying){
+    if(status === "Playing"){
         button.textContent ="Played"
 
         confetti({
@@ -123,8 +123,10 @@ function statusChange(button){
         });
 
         alert("Congratulations 🎉 You finished the game!");
+    } else if(status === "Played") {
+        button.textContent = "Will Play";
     } else {
-        button.textContent = "Playing";
+        button.textContent = "Playing"
     }
 }
 
